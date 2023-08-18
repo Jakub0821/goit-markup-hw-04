@@ -327,8 +327,8 @@ padding-bottom: 16px;
   fill: var(--color-contrast-dark);
 }
 
-.icon-our-team:hover,
-.icon-our-team:focus {
+.icon-our-team:
+.icon-our-team: {
   fill: var(--color-active);
 }
 
