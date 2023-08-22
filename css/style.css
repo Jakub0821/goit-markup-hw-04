@@ -95,6 +95,8 @@ body {
  flex-direction: column;
  margin: 0;
  margin: auto;
+ display: flex;
+ align-items: center;
 }
 
 .column-container-footer {
