@@ -5,7 +5,7 @@
  <meta name="viewbox" content="width=device-width, initial-scale=1.0">
  <title>Web Studio-Main Page</title>
  <link href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" rel="stylesheet">
- <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="css/styles.css">
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 
 <body>
  <header class="header-border">
-  <div class="container header-wrap">
+  <div class="container">
    <nav class="nav-header">
     <a href="./" rel="noreferrer noopener" class="logo"><span class="logo-web-font">web</span><span class="logo-studio-font">studio</span></a>
     <ul class="nav-menu">
@@ -62,8 +62,9 @@
     <ul class="company-values-list">
      <li class="company-values-list-element">
       <div class="icon-wrapper-company-values">
-          <svg use href="./Foto/icons.svg#icon-antenna-1-1" class="customers-icon" width="64" height="64" viewbox="0 0 64 64"></svg>
-          
+        <svg class="icon" width="64" height="64" viewbox="0 0 64 64">
+          <use href="./Foto/icons.svg#icon-antenna-1-1"></use>
+         </svg>
       </div>
       <h3 class="text-h3">Strategy</h3>
       <p class="text-body">
@@ -74,8 +75,9 @@
      </li>
      <li class="company-values-list-element">
       <div class="icon-wrapper-company-values">
-        <svg use href="./Foto/icons.svg#icon-clock-1-1" class="customers-icon" width="64" height="64" viewbox="0 0 64 64"></svg>
-        
+       <svg width="64" height="64" viewbox="0 0 64 64">
+        <use href="./Foto/icons.svg#icon-clock-1-1"></use>
+       </svg>
       </div>
       <h3 class="text-h3">Punctuality</h3>
       <p class="text-body">
@@ -86,8 +88,9 @@
      </li>
      <li class="company-values-list-element">
       <div class="icon-wrapper-company-values">
-        <svg use href="./Foto/icons.svg#icon-diagram-1-1" class="customers-icon" width="64" height="64" viewbox="0 0 64 64"></svg>
-        
+       <svg width="64" height="64" viewbox="0 0 64 64">
+        <use href="./Foto/icons.svg#icon-diagram-1-1"></use>
+       </svg>
       </div>
       <h3 class="text-h3">Diligence</h3>
       <p class="text-body">
@@ -98,8 +101,9 @@
      </li>
      <li class="company-values-list-element">
       <div class="icon-wrapper-company-values">
-        <svg use href="./Foto/icons.svg#icon-astronaut-1-1" class="customers-icon" width="64" height="64" viewbox="0 0 64 64"></svg>
-        
+       <svg width="64" height="64" viewbox="0 0 64 64">
+        <use href="./Foto/icons.svg#icon-astronaut-1-1"></use>
+       </svg>
       </div>
       <h3 class="text-h3">Technologies</h3>
       <p class="text-body">
@@ -117,13 +121,13 @@
      <h2 class="text-h2">What Are We Doing</h2>
      <ul class="company-activities-list">    
       <li class="company-activities-element">
-       <img src="Foto/foto1.jpg" alt="monitor with active webpage" width="360" height="300" />
+       <img src="./Foto/foto1.jpg" alt="monitor with active webpage" width="360" height="300" />
       </li>
       <li class="company-activities-element">
-       <img src="Foto/foto2.jpg" alt="three screens with opened whatsapp jumping out of smartphone" width="360" height="300" />
+       <img src="./Foto/foto2.jpg" alt="three screens with opened whatsapp jumping out of smartphone" width="360" height="300" />
       </li>
       <li class="company-activities-element">
-       <img src="Foto/foto3.jpg" alt="hand holding smathphone with opened article against the background of laptop, bottle of water, plants and cup of coffee" width="360" height="300" />
+       <img src="./Foto/foto3.jpg" alt="hand holding smathphone with opened article against the background of laptop, bottle of water, plants and cup of coffee" width="360" height="300" />
       </li>
      </ul>
     </div>
@@ -135,147 +139,121 @@
      <h2 class="text-h2">Our Team</h2>
      <ul class="our-team-list">
       <li class="our-team-list-element">
-       <img src="Foto/TeamCard1.jpg" alt="elegant smiling bearded brunette man" width="264" height="260" />
+       <img src="./Foto/TeamCard1.jpg" alt="elegant smiling bearded brunette man" width="264" height="260" />
        <div class="worker-wrapper">
         <h3 class="text-h3-center">Mark Guerrero</h3>
         <p class="text-body-center">Product Designer</p>
-        <ul class="icon-wrapper-our-team">
-            <li class="social-footer-icon-element">
-                <a href class="circle-footer">
-                    <svg class="icon-footer" width="24" height="24" viewbox="0 0 24 24">
-                 <use href="./Foto/icons.svg#icon-instagram-2-1"></use>
-                    </svg>
-                </a>    
-           </li>
-           <li class="social-footer-icon-element">
-            <a href class="circle-footer">
-                <svg class="icon-footer" width="24" height="24" viewbox="0 0 24 24">
-               <use href="./Foto/icons.svg#icon-twitter-1-1"></use>
-                </svg>
-            </a>   
-           </li>
-           <li class="social-footer-icon-element">
-            <a href class="circle-footer">
-                <svg class="icon-footer" width="24" height="24" viewbox="0 0 24 24">
-               <use href="./Foto/icons.svg#icon-facebook-1-1"></use>
+        <div class="icon-wrapper-our-team">
+          <div class="circle">
+            <svg width="16" height="16" viewbox="0 0 16 16" class="icon-our-team">
+              <use href="./Foto/icons.svg#icon-instagram-2-1"></use>
             </svg>
-            </a>
-           </li>
-           <li class="social-footer-icon-element">
-            <a href class="circle-footer">
-                <svg class="icon-footer" width="24" height="24" viewbox="0 0 24 24">
-               <use href="./Foto/icons.svg#icon-linkedin-1-1"></use>
-               </svg>
-            </a>
-           </li>
-        </ul>
+          </div>
+          <div class="circle">
+            <svg width="16" height="16" viewbox="0 0 16 16" class="icon-our-team">
+              <use href="./Foto/icons.svg#icon-twitter-1-1"></use>
+             </svg>
+          </div>
+          <div class="circle">
+            <svg width="16" height="16" viewbox="0 0 16 16" class="icon-our-team">
+              <use href="./Foto/icons.svg#icon-facebook-1-1"></use>
+             </svg>
+          </div>
+          <div class="circle">
+            <svg width="16" height="16" viewbox="0 0 16 16" class="icon-our-team">
+              <use href="./Foto/icons.svg#icon-linkedin-1-1"></use>
+             </svg>
+          </div>
+        </div>
+       </div>
       </li>
       <li class="our-team-list-element">
-       <img src="Foto/TeamCard2.jpg" alt="happy elegant young man looking left" width="264" height="260" />
+       <img src="./Foto/TeamCard2.jpg" alt="happy elegant young man looking left" width="264" height="260" />
        <div class="worker-wrapper">
         <h3 class="text-h3-center">Tom Ford</h3>
         <p class="text-body-center">Frontend Developer</p>
-        <ul class="icon-wrapper-our-team">
-            <li class="social-footer-icon-element">
-                <a href class="circle-footer">
-                    <svg class="icon-footer" width="24" height="24" viewbox="0 0 24 24">
-                 <use href="./Foto/icons.svg#icon-instagram-2-1"></use>
-                    </svg>
-                </a>    
-           </li>
-           <li class="social-footer-icon-element">
-            <a href class="circle-footer">
-                <svg class="icon-footer" width="24" height="24" viewbox="0 0 24 24">
-               <use href="./Foto/icons.svg#icon-twitter-1-1"></use>
-                </svg>
-            </a>   
-           </li>
-           <li class="social-footer-icon-element">
-            <a href class="circle-footer">
-                <svg class="icon-footer" width="24" height="24" viewbox="0 0 24 24">
-               <use href="./Foto/icons.svg#icon-facebook-1-1"></use>
-            </svg>
-            </a>
-           </li>
-           <li class="social-footer-icon-element">
-            <a href class="circle-footer">
-                <svg class="icon-footer" width="24" height="24" viewbox="0 0 24 24">
-               <use href="./Foto/icons.svg#icon-linkedin-1-1"></use>
+        <div class="icon-wrapper-our-team">
+            <div class="circle">
+              <svg width="16" height="16" viewbox="0 0 16 16" class="icon-our-team">
+                <use href="./Foto/icons.svg#icon-instagram-2-1"></use>
+              </svg>
+            </div>
+            <div class="circle">
+              <svg width="16" height="16" viewbox="0 0 16 16" class="icon-our-team">
+                <use href="./Foto/icons.svg#icon-twitter-1-1"></use>
                </svg>
-            </a>
-           </li>
-        </ul>
+            </div>
+            <div class="circle">
+              <svg width="16" height="16" viewbox="0 0 16 16" class="icon-our-team">
+                <use href="./Foto/icons.svg#icon-facebook-1-1"></use>
+               </svg>
+            </div>
+            <div class="circle">
+              <svg width="16" height="16" viewbox="0 0 16 16" class="icon-our-team">
+                <use href="./Foto/icons.svg#icon-linkedin-1-1"></use>
+               </svg>
+            </div>
+          </div>
+       </div>
       </li>
       <li class="our-team-list-element">
-       <img src="Foto/TeamCard3.jpg" alt="smiling young girl with long brown hair wearing pink sweater" width="264" height="260" />
+       <img src="./Foto/TeamCard3.jpg" alt="smiling young girl with long brown hair wearing pink sweater" width="264" height="260" />
        <div class="worker-wrapper">
         <h3 class="text-h3-center">Camila Garcia</h3>
         <p class="text-body-center">Marketing</p>
-        <ul class="icon-wrapper-our-team">
-            <li class="social-footer-icon-element">
-                <a href class="circle-footer">
-                    <svg class="icon-footer" width="24" height="24" viewbox="0 0 24 24">
-                 <use href="./Foto/icons.svg#icon-instagram-2-1"></use>
-                    </svg>
-                </a>    
-           </li>
-           <li class="social-footer-icon-element">
-            <a href class="circle-footer">
-                <svg class="icon-footer" width="24" height="24" viewbox="0 0 24 24">
-               <use href="./Foto/icons.svg#icon-twitter-1-1"></use>
-                </svg>
-            </a>   
-           </li>
-           <li class="social-footer-icon-element">
-            <a href class="circle-footer">
-                <svg class="icon-footer" width="24" height="24" viewbox="0 0 24 24">
-               <use href="./Foto/icons.svg#icon-facebook-1-1"></use>
-            </svg>
-            </a>
-           </li>
-           <li class="social-footer-icon-element">
-            <a href class="circle-footer">
-                <svg class="icon-footer" width="24" height="24" viewbox="0 0 24 24">
-               <use href="./Foto/icons.svg#icon-linkedin-1-1"></use>
+        <div class="icon-wrapper-our-team">
+            <div class="circle">
+              <svg width="16" height="16" viewbox="0 0 16 16" class="icon-our-team">
+                <use href="./Foto/icons.svg#icon-instagram-2-1"></use>
+              </svg>
+            </div>
+            <div class="circle">
+              <svg width="16" height="16" viewbox="0 0 16 16" class="icon-our-team">
+                <use href="./Foto/icons.svg#icon-twitter-1-1"></use>
                </svg>
-            </a>
-           </li>
-        </ul>
+            </div>
+            <div class="circle">
+              <svg width="16" height="16" viewbox="0 0 16 16" class="icon-our-team">
+                <use href="./Foto/icons.svg#icon-facebook-1-1"></use>
+               </svg>
+            </div>
+            <div class="circle">
+              <svg width="16" height="16" viewbox="0 0 16 16" class="icon-our-team">
+                <use href="./Foto/icons.svg#icon-linkedin-1-1"></use>
+               </svg>
+            </div>
+          </div>
+       </div>
       </li>
       <li class="our-team-list-element">
-       <img src="Foto/TeamCard4.jpg" alt="happy casually dressed young brunette bearded man" width="264" height="260" />
+       <img src="./Foto/TeamCard4.jpg" alt="happy casually dressed young brunette bearded man" width="264" height="260" />
        <div class="worker-wrapper">
         <h3 class="text-h3-center">Daniel Wilson</h3>
         <p class="text-body-center">UI Designer</p>
-        <ul class="icon-wrapper-our-team">
-            <li class="social-footer-icon-element">
-                <a href class="circle-footer">
-                    <svg class="icon-footer" width="24" height="24" viewbox="0 0 24 24">
-                 <use href="./Foto/icons.svg#icon-instagram-2-1"></use>
-                    </svg>
-                </a>    
-           </li>
-           <li class="social-footer-icon-element">
-            <a href class="circle-footer">
-                <svg class="icon-footer" width="24" height="24" viewbox="0 0 24 24">
-               <use href="./Foto/icons.svg#icon-twitter-1-1"></use>
-                </svg>
-            </a>   
-           </li>
-           <li class="social-footer-icon-element">
-            <a href class="circle-footer">
-                <svg class="icon-footer" width="24" height="24" viewbox="0 0 24 24">
-               <use href="./Foto/icons.svg#icon-facebook-1-1"></use>
-            </svg>
-            </a>
-           </li>
-           <li class="social-footer-icon-element">
-            <a href class="circle-footer">
-                <svg class="icon-footer" width="24" height="24" viewbox="0 0 24 24">
-               <use href="./Foto/icons.svg#icon-linkedin-1-1"></use>
+        <div class="icon-wrapper-our-team">
+            <div class="circle">
+              <svg width="16" height="16" viewbox="0 0 16 16" class="icon-our-team">
+                <use href="./Foto/icons.svg#icon-instagram-2-1"></use>
+              </svg>
+            </div>
+            <div class="circle">
+              <svg width="16" height="16" viewbox="0 0 16 16" class="icon-our-team">
+                <use href="./Foto/icons.svg#icon-twitter-1-1"></use>
                </svg>
-            </a>
-           </li>
+            </div>
+            <div class="circle">
+              <svg width="16" height="16" viewbox="0 0 16 16" class="icon-our-team">
+                <use href="./Foto/icons.svg#icon-facebook-1-1"></use>
+               </svg>
+            </div>
+            <div class="circle">
+              <svg width="16" height="16" viewbox="0 0 16 16" class="icon-our-team">
+                <use href="./Foto/icons.svg#icon-linkedin-1-1"></use>
+               </svg>
+            </div>
+          </div>
+       </div>
+      </li>
      </ul>
     </div>
    </div>
@@ -286,53 +264,44 @@
      <h2 class="text-h2">Customers</h2>
      <ul class="customers-list">
       <li class="customers-list-element">
-        <a href="#" class="customers-link">
-            <svg class="customers-icon" width="104" height="56" viewbox="0 0 104 56">
-        <use href="Foto/icons.svg#icon-Logo-6"></use>
+       <svg class="customers-icon" width="104" height="56" viewbox="0 0 104 56">
+        <use href="./Foto/icons.svg#icon-Logo-6"></use>
        </svg>
-        </a>
       </li>
       <li class="customers-list-element">
-        <a href="#" class="customers-link">
-        <svg class="customers-icon" width="104" height="56" viewbox="0 0 104 56">
-        <use href="Foto/icons.svg#icon-Logo-7"></use>
-        </svg>
-        </a>
+       <svg class="customers-icon" width="104" height="56" viewbox="0 0 104 56">
+        <use href="./Foto/icons.svg#icon-Logo-7"></use>
+       </svg>
       </li>
       <li class="customers-list-element">
-        <a href="#" class="customers-link"></a>
-         <svg class="customers-icon" width="104" height="56" viewbox="0 0 104 56">
-          <use href="Foto/icons.svg#icon-Logo-8"></use>
-         </svg>
-         </a>
+       <svg class="customers-icon" width="104" height="56" viewbox="0 0 104 56">
+        <use href="./Foto/icons.svg#icon-Logo-8"></use>
+       </svg>
       </li>
       <li class="customers-list-element">
-        <a href="#" class="customers-link">
-        <svg class="customers-icon" width="104" height="56" viewbox="0 0 104 56">
-        <use href="Foto/icons.svg#icon-Logo-9"></use>
-        </svg>
-        </a>
+       <svg class="customers-icon" width="104" height="56" viewbox="0 0 104 56">
+        <use href="./Foto/icons.svg#icon-Logo-9"></use>
+       </svg>
       </li>
       <li class="customers-list-element">
-        <a href="#" class="customers-link">
-        <svg class="customers-icon" width="104" height="56" viewbox="0 0 104 56">
-        <use href="Foto/icons.svg#icon-Logo-10"></use>
-        </svg>
-        </a>
+       <svg class="customers-icon" width="104" height="56" viewbox="0 0 104 56">
+        <use href="./Foto/icons.svg#icon-Logo-10"></use>
+       </svg>
       </li>
       <li class="customers-list-element">
-        <a href="#" class="customers-link">
-          <svg class="customers-icon" width="104" height="56" viewbox="0 0 104 56">
-            <use href="Foto/icons.svg#icon-Logo-11"></use>
-          </svg>
-        </a>
+       <svg class="customers-icon" width="104" height="56" viewbox="0 0 104 56">
+        <use href="./Foto/icons.svg#icon-Logo-11"></use>
+       </svg>
       </li>
+     </ul>
+    </div>
    </div>
   </section>
  </main>
 
  <footer class="footer-section">
-   <div class="container-footer container">
+   <div class="container-footer">
+    <div class="column-container-footer">
      <a href="./" rel="noreferrer noopener" class="logo-footer"><span class="logo-web-font">web</span><span class="logo-studio-font-bright">studio</span></a>
      <p class="footer-text">
       Increase the flow of customers and 
@@ -340,38 +309,41 @@
       marketing & growth solutions.
      </p>
     </div>
-    <div class="container-footer container">
+    <div class="column-container-footer">
      <p class="social-footer-font">Social media</p>
+     <div class="wrapper-social-footer-icon">
       <ul>
-        <li class="social-footer-icon-element">
-            <a href class="circle-footer">
-                <svg class="icon-footer" width="24" height="24" viewbox="0 0 24 24">
-             <use href="Foto/icons.svg#icon-linkedin-1-2"></use>
-                </svg>
-            </a>    
+       <li class="social-footer-icon-element">
+        <div class="circle-footer">
+          <svg class="icon-footer" width="24" height="24" viewbox="0 0 24 24">
+           <use href="./Foto/icons.svg#icon-instagram-2-2"></use>
+          </svg>
+        </div>
        </li>
        <li class="social-footer-icon-element">
-        <a href class="circle-footer">
-            <svg class="icon-footer" width="24" height="24" viewbox="0 0 24 24">
-           <use href="Foto/icons.svg#icon-twitter-1-2"></use>
-            </svg>
-        </a>   
+        <div class="circle-footer">
+          <svg class="icon-footer" width="24" height="24" viewbox="0 0 24 24">
+           <use href="./Foto/icons.svg#icon-twitter-1-2"></use>
+          </svg>
+        </div>
        </li>
        <li class="social-footer-icon-element">
-        <a href class="circle-footer">
-            <svg class="icon-footer" width="24" height="24" viewbox="0 0 24 24">
-           <use href="Foto/icons.svg#icon-facebook-1-2"></use>
-        </svg>
-        </a>
+        <div class="circle-footer">
+          <svg class="icon-footer" width="24" height="24" viewbox="0 0 24 24">
+           <use href="./Foto/icons.svg#icon-facebook-1-2"></use>
+          </svg>
+        </div>
        </li>
        <li class="social-footer-icon-element">
-        <a href class="circle-footer">
-            <svg class="icon-footer" width="24" height="24" viewbox="0 0 24 24">
-           <use href="Foto/icons.svg#icon-instagram-2-2"></use>
-           </svg>
-        </a>
+        <div class="circle-footer">
+          <svg class="icon-footer" width="24" height="24" viewbox="0 0 24 24">
+           <use href="./Foto/icons.svg#icon-linkedin-1-2"></use>
+          </svg>
+        </div>
        </li>
       </ul>
+     </div>
+    </div>
    </div>
  </footer>
 
