@@ -489,13 +489,15 @@ padding-bottom: 16px;
   width: 168px;
   height: 88px;
   padding: 16px 32px;
-  fill: var(--color-border-dark);
+  fill: var(--color-contrast-brighter);
 }
 
 .customers-icon:focus,
 .customers-icon:hover {
   fill: var(--color-active);
   cursor: pointer;
+  border-color: var(--color-active);
+  fill: var(--color-contrast-brighter);
 }
 
 .wrapper-social-footer-icon {
