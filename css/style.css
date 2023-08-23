@@ -21,8 +21,6 @@ h4 {
 
 ul {
  list-style: none;
- margin: 0;
- padding: 0;
 }
 
 
@@ -82,26 +80,30 @@ body {
 }
 
 .container {
+ display: flex;
  width: 1158px;
  padding: 0 15px;
  margin: 0 auto;
+ justify-content: space-between;
 }
 
 .container-footer {
   display: flex;
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+  gap: 120px;
  }
 
 .column-container {
  flex-direction: column;
  margin: 0;
  margin: auto;
- display: flex;
- align-items: center;
 }
 
 .column-container-footer {
  flex-direction: column;
- margin left: 120px;
+ margin: 0;
  gap: 16px;
 }
 
@@ -113,7 +115,6 @@ body {
 .nav-header {
  display: flex;
  align-items: center;
- margin-right: auto;
 }
 
 .logo {
@@ -180,15 +181,12 @@ body {
 
 .address-list {
  display: flex;
- align-items: center;
  gap: 40px;
  margin: 0;
  padding: 24px 0;
 }
 
 .text-contacts {
- display: flex;
- align-items: center;
  color: var(--color-font-main);
  font-size: 16px;
  line-height: 1.5;
@@ -204,7 +202,6 @@ body {
 
 
 .social-footer-font {
-display: flex;
 font-family: Roboto;
 font-size: 16px;
 font-weight: 500;
@@ -212,7 +209,7 @@ line-height: 1.5;
 letter-spacing: 0.32px;
 color: var(--color-contrast-brighter);
 margin: 0;
-margin-bottom: 16px;
+padding-bottom: 16px;
 }
 
 
@@ -223,21 +220,17 @@ margin-bottom: 16px;
 
 .h1-section {
  background-color: var(--color-heading-primary);
- background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../Foto/hero\ image.jpg);
+ background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office.jpg);
  background-repeat: no-repeat;
  background-position: center;
  padding: 188px 0;
- margin: 0 auto;
- max-width: 1440px;
 }
 
 .icon-wrapper-company-values {
   border-radius: 4px;
   background: var(--color-contrast-bright);
+  padding: 24px 100px;
   margin-bottom: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
  }
 
 .text-h1-first {
@@ -331,12 +324,12 @@ margin-bottom: 16px;
 }
 
 .icon-our-team {
-  fill: var(--color-active);
+  fill: var(--color-contrast-dark);
 }
 
-.icon-our-team:
-.icon-our-team: {
-fill: var(--color-active);
+.icon-our-team:hover,
+.icon-our-team:focus {
+  fill: var(--color-active);
 }
 
 .our-team-list-element {
@@ -374,14 +367,12 @@ fill: var(--color-active);
 
 
 .footer-text {
- display: flex;
  color: var(--color-contrast-bright);
  font-size: 16px;
  line-height: 1.5;
  letter-spacing: 0.32px;
  max-width: 264px;
  margin: 0;
- align-items: center;
 }
 
 .footer-section {
@@ -538,13 +529,15 @@ fill: var(--color-active);
 }
 
 .circle-footer {
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-contrast-dark);
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
-  background-color: var(--color-contrast-bright);
-  border-radius: 50%;
 }
 .circle-footer:focus,
 .circle-footer:hover {
