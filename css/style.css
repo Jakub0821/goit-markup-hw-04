@@ -113,6 +113,7 @@ body {
 .nav-header {
  display: flex;
  align-items: center;
+ margin-right: auto;
 }
 
 .logo {
@@ -179,13 +180,15 @@ body {
 
 .address-list {
  display: flex;
+ align-items: center;
  gap: 40px;
  margin: 0;
  padding: 24px 0;
- align-items: center;
 }
 
 .text-contacts {
+ display: flex;
+ align-items: center;
  color: var(--color-font-main);
  font-size: 16px;
  line-height: 1.5;
@@ -224,6 +227,8 @@ margin-bottom: 16px;
  background-repeat: no-repeat;
  background-position: center;
  padding: 188px 0;
+ margin: 0 auto;
+ max-width: 1440px;
 }
 
 .icon-wrapper-company-values {
@@ -232,6 +237,7 @@ margin-bottom: 16px;
   margin-bottom: 8px;
   display: flex;
   align-items: center;
+  justify-content: center;
  }
 
 .text-h1-first {
@@ -532,15 +538,13 @@ fill: var(--color-active);
 }
 
 .circle-footer {
-  width: 40px;
-  height: 40px;
-  background-color: var(--color-contrast-dark);
-  border-radius: 50%;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-contrast-bright);
+  border-radius: 50%;
 }
 .circle-footer:focus,
 .circle-footer:hover {
