@@ -546,3 +546,6 @@ padding-bottom: 16px;
 .icon-footer:hover {
   cursor: pointer;
 }
+.social-footer-icon-element{
+  fill: var(--color-contrast-bright)
+}
